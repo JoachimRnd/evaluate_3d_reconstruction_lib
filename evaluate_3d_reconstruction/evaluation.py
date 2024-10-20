@@ -43,8 +43,8 @@ import matplotlib
 matplotlib.use("Agg")
 
 rc("font", **{"family": "serif", "sans-serif": ["Times New Roman"]})
-rc("text", usetex=True if shutil.which('latex') else False)  # if Latex is installed and executable on PATH
-
+# rc("text", usetex=True if shutil.which('latex') else False)  # if Latex is installed and executable on PATH
+rc("text", usetex=False)
 
 def write_color_distances_mesh(path, mesh, distances, max_distance):
     cmap = plt.get_cmap("hsv")

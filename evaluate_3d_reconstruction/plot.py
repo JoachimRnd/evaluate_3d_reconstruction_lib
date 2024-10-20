@@ -41,8 +41,8 @@ from cycler import cycler
 from matplotlib import rc
 
 rc("font", **{"family": "serif", "sans-serif": ["Times New Roman"]})
-rc("text", usetex=True if shutil.which('latex') else False)  # if Latex is installed and executable on PATH
-
+# rc("text", usetex=True if shutil.which('latex') else False)  # if Latex is installed and executable on PATH
+rc("text", usetex=False) 
 
 def plot_graph(
     scene,
